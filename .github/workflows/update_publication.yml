@@ -29,7 +29,7 @@ jobs:
           pip install GitPython openpecha PyYAML PyGithub subprocess.run pathlib
       - name: run python script
         env:
-          SECRET: ${{ secrets.GITHUB_TOKEN }}
+          SECRET: ${{ secrets.GH_TOKEN }}
         run: |
           import os 
           import yaml
@@ -83,7 +83,7 @@ jobs:
                   
           def pull_branch(pecha_path):
               subprocess.run(f'cd {pecha_path}/; git pull --rebase origin publication', shell=True)
-              subprocess.run(f'rm -rf ./.github', shell=True)
+              subprocess.run(f'cd {pecha_path}/; rm -rf ./.github', shell=True)
               
           def get_hfml(opf_path):
               serializer = HFMLSerializer(opf_path, layers=["Pagination"])
