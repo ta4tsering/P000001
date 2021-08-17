@@ -1,6 +1,8 @@
 name: create release
 'on':
   push:
+    branches:
+      - master
     paths-ignore: '**/README.md'
 jobs:
   release-project:
