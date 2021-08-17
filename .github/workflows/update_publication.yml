@@ -148,3 +148,11 @@ jobs:
               setup_auth(repo, "ta4tsering", token)
               commit(repo, commit_msg, "publication")
         shell: python
+        
+      - uses: oleksiyrudenko/gha-git-credentials@v2.1
+        with:
+          global: true
+          name: 'Tashi Tsering'
+          email: 'ta3tsering@gmail.com'
+          actor: 'ta4tsering'
+          token: '${{ secrets.GITHUB_TOKEN }}'
