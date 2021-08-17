@@ -29,7 +29,7 @@ jobs:
           pip install GitPython openpecha PyYAML PyGithub subprocess.run pathlib
       - name: run python script
         env:
-          SECRET: ${{ secrets.GITHUB_TOKEN }}
+          SECRET: ${{ secrets.GH_TOKEN }}
         run: |
           import os 
           import yaml
@@ -38,9 +38,11 @@ jobs:
           from openpecha.serializers import HFMLSerializer
           from github import Github
           from git import Repo
+          
           config = {
               "OP_ORG": "https://github.com/ta4tsering"
           }
+          
           def commit(repo, message, not_includes=[], branch="publication"):
               has_changed = False
               for fn in repo.untracked_files:
@@ -64,26 +66,31 @@ jobs:
                           message = "Initial commit"
                       repo.git.commit("-m", message)
                       repo.git.push("origin", "HEAD:publication")
+                      
           def setup_auth(repo, org, token):
               remote_url = repo.remote().url
               old_url = remote_url.split("//")
               authed_remote_url = f"{old_url[0]}//{org}:{token}@{old_url[1]}"
               repo.remote().set_url(authed_remote_url)
+              
           def write_hfml_text(repo, pecha_path, hfml_texts, meta_info):
-              repo.git.pull("origin", "HEAD:publication")
               for _, vol in enumerate(hfml_texts,1):
                   vol_num = vol[1:]
                   content = hfml_texts[f'v{vol_num}']
                   file_name = meta_info[f"v{vol_num}"]['title']
                   Path(f"{pecha_path}/{file_name}.txt").write_text(content, encoding='utf-8')
                   print(f"{file_name} is done")
+                  
           def pull_branch(pecha_path):
               subprocess.run(f'cd {pecha_path}/; git pull --rebase origin publication', shell=True)
+              subprocess.run(f'cd {pecha_path}/; rm -rf ./.github', shell=True)
+              
           def get_hfml(opf_path):
               serializer = HFMLSerializer(opf_path, layers=["Pagination"])
               serializer.apply_layers()
               results = serializer.get_result()
               return results
+              
           def get_meta_info(pecha_path, pecha_id):
               cur_text = {}
               meta_info = {}
@@ -99,10 +106,12 @@ jobs:
                   meta_info.update(cur_text)
                   cur_text = {}
               return meta_info
+              
           def get_branch(repo, branch):
               if branch in repo.heads:
                   return branch
               return "master"
+              
           def download_pecha(pecha_id, out_path=None, branch="base-update-review"):
               pecha_url = f"{config['OP_ORG']}/{pecha_id}.git"
               out_path = Path(out_path)
@@ -114,6 +123,7 @@ jobs:
               repo.git.checkout(branch_to_pull)
               print(f"{pecha_id} Downloaded ")
               return pecha_path  
+              
           if __name__=='__main__':
               token = os.environ.get('SECRET')
               g = Github(token)
