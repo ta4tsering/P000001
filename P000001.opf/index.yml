@@ -9,37 +9,37 @@ annotations:
         work_id: T1-1
         span:
         - vol: 1
-          start: 28
+          start: 27
           end: 396711
       4993722a64084f1da94b10ce89482014:
         work_id: T1-2
         span:
         - vol: 1
-          start: 396712
+          start: 396711
           end: 671993
       754c054228ee4a88934945e9ab03b27d:
         work_id: T1-3
         span:
         - vol: 1
-          start: 671994
+          start: 671993
           end: 717500
       f543104ca7b144d0a8822d0f411bf926:
         work_id: T1-4
         span:
         - vol: 1
-          start: 717501
+          start: 717500
           end: 758868
       dee285e5d4ea407894d5233dac9a1aa7:
         work_id: T1-5
         span:
         - vol: 1
-          start: 758869
+          start: 758868
           end: 835520
       a6a2e0a2fe474911a83c44db140bad46:
         work_id: T1-6
         span:
         - vol: 1
-          start: 835521
+          start: 835520
           end: 934579
         - vol: 2
           start: 0
@@ -51,67 +51,67 @@ annotations:
         work_id: T1-7
         span:
         - vol: 3
-          start: 147191
+          start: 147190
           end: 351147
       a84404f968a84037af8fa0d1e3bf9cd3:
         work_id: T1-8
         span:
         - vol: 3
-          start: 351148
+          start: 351147
           end: 378752
       7e806391f0b9410bb335e20c4ac8b65d:
         work_id: T1-9
         span:
         - vol: 3
-          start: 378753
+          start: 378752
           end: 411117
       265caa92e1f64198a15be5fe15267a7c:
         work_id: T1-10
         span:
         - vol: 3
-          start: 411118
+          start: 411117
           end: 430689
       aab6bdcb9fab40dc9f8ee58e243e4060:
         work_id: T1-11
         span:
         - vol: 3
-          start: 430690
+          start: 430689
           end: 509930
       b1220805ff9247a59507526e79a36e80:
         work_id: T1-12
         span:
         - vol: 3
-          start: 509931
+          start: 509930
           end: 545659
       8a639c9e916f4e1c9d7473e5a57a3fb9:
         work_id: T1-13
         span:
         - vol: 3
-          start: 545660
+          start: 545659
           end: 561326
       120de32dc6504e0b9b4984116e1e9c26:
         work_id: T1-14
         span:
         - vol: 3
-          start: 561327
+          start: 561326
           end: 576302
       21f4081634ba4c4cb7fb972e4dfa0e75:
         work_id: T1-15
         span:
         - vol: 3
-          start: 576303
+          start: 576302
           end: 688446
       5e8b444d1bc84fa69cb16192ff80bfc0:
         work_id: T1-16
         span:
         - vol: 3
-          start: 688447
+          start: 688446
           end: 791501
       07b633610e2d4982876e54d029c63e1f:
         work_id: T1-17
         span:
         - vol: 3
-          start: 791502
+          start: 791501
           end: 906835
         - vol: 4
           start: 0
@@ -529,7 +529,7 @@ annotations:
         work_id: T44-1
         span:
         - vol: 35
-          start: 32
+          start: 31
           end: 31
     span:
     - vol: 34
@@ -545,181 +545,181 @@ annotations:
         work_id: T44-1
         span:
         - vol: 35
-          start: 32
+          start: 31
           end: 188865
       e1311b8a643348dd817b22df9dd5f404:
         work_id: T44-2
         span:
         - vol: 35
-          start: 188866
+          start: 188865
           end: 243897
       b207dec284f2440b9f2b61004b02a09c:
         work_id: T44-3
         span:
         - vol: 35
-          start: 243898
+          start: 243897
           end: 258031
       6ab1ea2c43a542a6817d0873b7f0a9f9:
         work_id: T44-4
         span:
         - vol: 35
-          start: 258032
+          start: 258031
           end: 297425
       3c09b93fa5774f5a81b3c1effce1fe07:
         work_id: T44-5
         span:
         - vol: 35
-          start: 297426
+          start: 297425
           end: 302495
       d619969d0e3646cd897f08cfa88e439a:
         work_id: T44-6
         span:
         - vol: 35
-          start: 302496
+          start: 302495
           end: 305155
       071f3a06f98b426885f091b11694374d:
         work_id: T44-7
         span:
         - vol: 35
-          start: 305156
+          start: 305155
           end: 307845
       bae22d4461d84a4fa639b3816c903082:
         work_id: T44-8
         span:
         - vol: 35
-          start: 307846
+          start: 307845
           end: 327337
       e32933da2f204035bfe908f5e40472d4:
         work_id: T44-9
         span:
         - vol: 35
-          start: 327338
+          start: 327337
           end: 434406
       325e09f59f9c4c81ba1ea4a2aeedb645:
         work_id: T44-10
         span:
         - vol: 35
-          start: 434407
+          start: 434406
           end: 467763
       6575de71926b4c6c971bf47b90c2061b:
         work_id: T44-11
         span:
         - vol: 35
-          start: 467764
+          start: 467763
           end: 527901
       4fe7b1e5aa9b489fb73ab22814f7dbf6:
         work_id: T44-12
         span:
         - vol: 35
-          start: 527902
+          start: 527901
           end: 553857
       15e709766d8a403fabb829150e54dfb1:
         work_id: T44-13
         span:
         - vol: 35
-          start: 553858
+          start: 553857
           end: 573944
       d12c542ea2f641f494b71caab4fe4c3f:
         work_id: T44-14
         span:
         - vol: 35
-          start: 573945
+          start: 573944
           end: 609188
       a10e7dc4a0e6442eb865caf6e3dd1b5f:
         work_id: T44-15
         span:
         - vol: 35
-          start: 609189
+          start: 609188
           end: 629180
       57f1d575d1d0439fb2712fc1fc67eb95:
         work_id: T44-16
         span:
         - vol: 35
-          start: 629181
+          start: 629180
           end: 656067
       d4e1988a89804fae8f58beac633100bb:
         work_id: T44-17
         span:
         - vol: 35
-          start: 656068
+          start: 656067
           end: 710564
       57a73c70b49b4430b042b3d045e5c66e:
         work_id: T44-18
         span:
         - vol: 35
-          start: 710565
+          start: 710564
           end: 715537
       1be86079db964ce39092a77ea5f15a02:
         work_id: T44-19
         span:
         - vol: 35
-          start: 715538
+          start: 715537
           end: 730570
       82916258d23344079aabe72c4e56f26f:
         work_id: T44-20
         span:
         - vol: 35
-          start: 730571
+          start: 730570
           end: 769516
       4e96549b6aef4701a513a7210e0d9b61:
         work_id: T44-21
         span:
         - vol: 35
-          start: 769517
+          start: 769516
           end: 776906
       5c0438180c3b47f9ac744092eca1c864:
         work_id: T44-22
         span:
         - vol: 35
-          start: 776907
+          start: 776906
           end: 844450
       50220000834147c48438496f8f0096ce:
         work_id: T44-23
         span:
         - vol: 35
-          start: 844451
+          start: 844450
           end: 879923
       33205d1b08324218804a070d18362c5c:
         work_id: T44-24
         span:
         - vol: 35
-          start: 879924
+          start: 879923
           end: 886180
       6c46b910d48c457bb6f8181e5e0dde20:
         work_id: T44-25
         span:
         - vol: 35
-          start: 886181
+          start: 886180
           end: 901447
       26089b1e361645d984204612826ff6cf:
         work_id: T44-26
         span:
         - vol: 35
-          start: 901448
+          start: 901447
           end: 978438
       0e06d8aad42f4212bb5f8230b4f2ec19:
         work_id: T44-27
         span:
         - vol: 35
-          start: 978439
+          start: 978438
           end: 1016684
       df66f44f425f44f7ba08b20ca6b24bc9:
         work_id: T44-28
         span:
         - vol: 35
-          start: 1016685
+          start: 1016684
           end: 1075522
       a4d06492435a4f8ea3b81379dab26c05:
         work_id: T44-29
         span:
         - vol: 35
-          start: 1075523
+          start: 1075522
           end: 1094666
       ff19f2a104da42f581c0cdab03f6046d:
         work_id: T44-30
         span:
         - vol: 35
-          start: 1094667
+          start: 1094666
           end: 1142515
         - vol: 36
           start: 0
@@ -728,49 +728,49 @@ annotations:
         work_id: T44-31
         span:
         - vol: 36
-          start: 456554
+          start: 456553
           end: 781958
       23781a5df5b04d818f068b9758a6fda2:
         work_id: T44-32
         span:
         - vol: 36
-          start: 781959
+          start: 781958
           end: 800235
       15a175a9b41f473b9031cf8c0f4a262a:
         work_id: T44-33
         span:
         - vol: 36
-          start: 800236
+          start: 800235
           end: 975393
       56820d0f44754f9d87d79a355dd2c0cc:
         work_id: T44-34
         span:
         - vol: 36
-          start: 975394
+          start: 975393
           end: 1005354
       435491f641074a4ba087052c99344d0e:
         work_id: T44-35
         span:
         - vol: 36
-          start: 1005355
+          start: 1005354
           end: 1047799
       c592b550d23f46fd93d02a8b24175bb1:
         work_id: T44-36
         span:
         - vol: 36
-          start: 1047800
+          start: 1047799
           end: 1071676
       dc39596fa9534b75ab2a6bb9e2ede985:
         work_id: T44-37
         span:
         - vol: 36
-          start: 1071677
+          start: 1071676
           end: 1074073
       67e1c6f403354a2dbeca5c4f1eb12844:
         work_id: T44-38
         span:
         - vol: 36
-          start: 1074074
+          start: 1074073
           end: 1077817
         - vol: 37
           start: 0
@@ -779,43 +779,43 @@ annotations:
         work_id: T44-39
         span:
         - vol: 37
-          start: 30
+          start: 29
           end: 110143
       7f01633fd5c744c99c94b823c887acd4:
         work_id: T44-40
         span:
         - vol: 37
-          start: 110144
+          start: 110143
           end: 152033
       69ada1279f874f23b93d830c65e6488f:
         work_id: T44-41
         span:
         - vol: 37
-          start: 152034
+          start: 152033
           end: 171757
       c5901325a0a44941a29e80f4bebb2d13:
         work_id: T44-42
         span:
         - vol: 37
-          start: 171758
+          start: 171757
           end: 204753
       df78def3e5bd460c87e8c42b93d74ff7:
         work_id: T44-43
         span:
         - vol: 37
-          start: 204754
+          start: 204753
           end: 394186
       38810bd967aa4fffbac9e6c190a476a7:
         work_id: T44-44
         span:
         - vol: 37
-          start: 394187
+          start: 394186
           end: 774632
       8352fc2f6306491fa989164c12b227d1:
         work_id: T44-45
         span:
         - vol: 37
-          start: 774633
+          start: 774632
           end: 1122184
         - vol: 38
           start: 0
@@ -981,8 +981,7 @@ annotations:
     - vol: 42
       start: 802978
       end: 901356
-    - vol: base/v043
-      span:
+    - vol: 43
       start: 0
       end: 33
   df90cee906a54b27a6e63434a035140d:
@@ -6633,16 +6632,14 @@ annotations:
       f1e287f5c5e84f9c85370971abad41bb:
         work_id: T44-45
         span:
-        - vol: base/v099
-          span:
+        - vol: 99
           start: 0
           end: 594364
       683dc2d2cf104cc0bc8a110ec1d37897:
         work_id: T841-1
         span:
-        - vol: base/v099
-          span:
-          start: 594365
+        - vol: 99
+          start: 594364
           end: 594364
     span:
     - vol: 99
@@ -6654,58 +6651,50 @@ annotations:
       c15a4a8e14fe4fdaa2a983d6385aa28e:
         work_id: T841-1
         span:
-        - vol: base/v099
-          span:
-          start: 594365
+        - vol: 99
+          start: 594364
           end: 597750
       b5013205308d48a58313589dc9d70bfc:
         work_id: T841-2
         span:
-        - vol: base/v099
-          span:
-          start: 597751
+        - vol: 99
+          start: 597750
           end: 611858
       998939c2d57d481492ef1071fe649d15:
         work_id: T841-3
         span:
-        - vol: base/v099
-          span:
-          start: 611859
+        - vol: 99
+          start: 611858
           end: 615246
       658f792f4e0d472daf0bb1740f2f8d57:
         work_id: T841-4
         span:
-        - vol: base/v099
-          span:
-          start: 615247
+        - vol: 99
+          start: 615246
           end: 625548
       81f0b6015cd14290b10dea5e5c6ab647:
         work_id: T841-5
         span:
-        - vol: base/v099
-          span:
-          start: 625549
+        - vol: 99
+          start: 625548
           end: 629504
       3ce2a98a63054e8cb9e522f6d54fa260:
         work_id: T841-6
         span:
-        - vol: base/v099
-          span:
-          start: 629505
+        - vol: 99
+          start: 629504
           end: 636733
       8d70d44817be4bd787e5a6046b92864e:
         work_id: T841-7
         span:
-        - vol: base/v099
-          span:
-          start: 636734
+        - vol: 99
+          start: 636733
           end: 648048
       72a478b52c0642949038a7d47f2b9121:
         work_id: T841-8
         span:
-        - vol: base/v099
-          span:
-          start: 648049
+        - vol: 99
+          start: 648048
           end: 654594
     span:
     - vol: 99
@@ -8592,16 +8581,14 @@ annotations:
       8173ca4fc19c46298d1a9fcac0930651:
         work_id: T841-8
         span:
-        - vol: base/v102
-          span:
+        - vol: 102
           start: 0
           end: 34
       2365fa319cf449eaa830d1a78dc5917e:
         work_id: T845-1
         span:
-        - vol: base/v102
-          span:
-          start: 35
+        - vol: 102
+          start: 34
           end: 34
     span:
     - vol: 101
@@ -8616,40 +8603,34 @@ annotations:
       73ffa91f2ebf4359b59ef1d32234fd0e:
         work_id: T845-1
         span:
-        - vol: base/v102
-          span:
-          start: 35
+        - vol: 102
+          start: 34
           end: 366151
       3024f61749a14d78b15fe6770d0ddce5:
         work_id: T845-2
         span:
-        - vol: base/v102
-          span:
-          start: 366152
+        - vol: 102
+          start: 366151
           end: 634065
       0e8700c834474152b40935f9887885b7:
         work_id: T845-3
         span:
-        - vol: base/v102
-          span:
-          start: 634066
+        - vol: 102
+          start: 634065
           end: 821985
       d47184b4be344f51a7ff33fa8c221fde:
         work_id: T845-4
         span:
-        - vol: base/v102
-          span:
-          start: 821986
+        - vol: 102
+          start: 821985
           end: 1126401
       948657297c8b4723a473f559e499edf3:
         work_id: T845-5
         span:
-        - vol: base/v102
-          span:
-          start: 1126402
+        - vol: 102
+          start: 1126401
           end: 1491011
-        - vol: base/v103
-          span:
+        - vol: 103
           start: 0
           end: 414573
     span:
