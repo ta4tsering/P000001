@@ -39,7 +39,7 @@ jobs:
               "OP_ORG": "https://github.com/ta4tsering"
           }
 
-          def commit(repo, message, not_includes=[]):
+          def commit(repo, message, not_includes=[], branch="publication"):
               has_changed = False
 
               for fn in repo.untracked_files:
@@ -142,5 +142,5 @@ jobs:
               write_hfml_text(pecha_path, hfml_text, meta_info)
               repo = Repo(pecha_path)
               setup_auth(repo, "ta4tsering", token)
-              commit(repo, commit_msg)
+              commit(repo, commit_msg, "publication")
         shell: python
