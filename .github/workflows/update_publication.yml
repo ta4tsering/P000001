@@ -89,7 +89,8 @@ jobs:
                   print(f"{file_name} is done")
 
 
-          def remove_all_files(pecha_path):
+          def remove_all_files_and_branch(pecha_path):
+              subprocess.run(f'cd {pecha_path}/; git push origin --delete base-update-review', shell=True)
               subprocess.run(f'cd {pecha_path}/; rm -rf {pecha_id}.opf; rm -rf ./*', shell=True)
               subprocess.run(f'rm -rf {pecha_path}/.github', shell=True)
 
@@ -145,7 +146,7 @@ jobs:
               pecha_path = download_pecha(pecha_id, file_path)
               meta_info = get_meta_info(pecha_path, pecha_id)
               hfml_text = get_hfml(f"{pecha_path}/{pecha_id}.opf/")
-              remove_all_files(pecha_path)
+              remove_all_files_and_branch(pecha_path)
               write_hfml_text(pecha_path, hfml_text, meta_info)
               repo = Repo(pecha_path)
               setup_auth(repo, "ta4tsering", token)
