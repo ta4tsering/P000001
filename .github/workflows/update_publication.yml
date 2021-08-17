@@ -90,7 +90,7 @@ jobs:
 
 
           def remove_all_files_and_branch(pecha_path):
-              subprocess.run(f'cd {pecha_path}/; git push origin --delete base-update-review', shell=True)
+              subprocess.run(f'cd {pecha_path}/; git push origin --delete publication', shell=True)
               subprocess.run(f'cd {pecha_path}/; rm -rf {pecha_id}.opf; rm -rf ./*', shell=True)
               subprocess.run(f'rm -rf {pecha_path}/.github', shell=True)
 
