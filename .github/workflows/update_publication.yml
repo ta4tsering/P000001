@@ -11,12 +11,18 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: base-update-review
-
+          
+      - name: Configure git
+        uses: dawidd6/action-git-user-config@v1
+        with:
+          # Defaults to $GITHUB_ACTOR if not specified
+          username: ta4tsering
+          
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
-          python-version: ${{ matrix.python-version }}
-
+          python-version: ${{ matrix.python-version }}  
+          
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -39,7 +45,7 @@ jobs:
               "OP_ORG": "https://github.com/ta4tsering"
           }
 
-          def commit(repo, message, not_includes=[]):
+          def commit(repo, message, not_includes=[], branch="publication"):
               has_changed = False
 
               for fn in repo.untracked_files:
@@ -142,5 +148,5 @@ jobs:
               write_hfml_text(pecha_path, hfml_text, meta_info)
               repo = Repo(pecha_path)
               setup_auth(repo, "ta4tsering", token)
-              commit(repo, commit_msg)
+              commit(repo, commit_msg, branch="publication")
         shell: python
