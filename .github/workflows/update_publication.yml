@@ -72,6 +72,7 @@ jobs:
               old_url = remote_url.split("//")
               authed_remote_url = f"{old_url[0]}//{org}:{token}@{old_url[1]}"
               repo.remote().set_url(authed_remote_url)
+              print("setup_auth done")
 
 
           def write_hfml_text(pecha_path, hfml_texts, meta_info):
