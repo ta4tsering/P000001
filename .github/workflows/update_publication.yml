@@ -24,7 +24,7 @@ jobs:
 
       - name: run python script
         env:
-          SECRET: ${{ secrets.GITHUB_TOKEN }}
+          SECRET: ${{ secrets.GH_TOKEN }}
         run: |
           import os 
           import yaml
