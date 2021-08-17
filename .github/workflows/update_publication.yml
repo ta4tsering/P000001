@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install GitPython openpecha PyYAML PyGithub subprocess.run pathlib
 
-      - name: python script
+      - name: run python script
         env:
           SECRET: ${{ secrets.GITHUB_TOKEN }}
         run: |
