@@ -126,7 +126,9 @@ jobs:
               print(f"{pecha_id} Downloaded ")
               return pecha_path  
 
-
+          def git_config_user():
+              subprocess('git config user.email "ta3tsering@gmail.com";git config user.name "ta4tsering"', shell=True)
+              
 
           if __name__=='__main__':
               token = os.environ.get('SECRET')
@@ -140,6 +142,7 @@ jobs:
               hfml_text = get_hfml(f"{pecha_path}/{pecha_id}.opf/")
               remove_all_files(pecha_path)
               write_hfml_text(pecha_path, hfml_text, meta_info)
+              git_config_user()
               repo = Repo(pecha_path)
               setup_auth(repo, "ta4tsering", token)
               commit(repo, commit_msg, "publication")
