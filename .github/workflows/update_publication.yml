@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   release-project:
-    name: Release different versions of Text file
+    name: Create the publication
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,6 +26,7 @@ jobs:
         env:
           SECRET: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          import os 
           import yaml
           import subprocess
           from pathlib import Path
