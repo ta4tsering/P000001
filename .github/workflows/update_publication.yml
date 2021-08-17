@@ -127,7 +127,7 @@ jobs:
               return pecha_path  
 
           def git_config_user():
-              subprocess('git config user.email "ta3tsering@gmail.com";git config user.name "ta4tsering"', shell=True)
+              subprocess.run('git config user.email "ta3tsering@gmail.com";git config user.name "ta4tsering"', shell=True)
               
 
           if __name__=='__main__':
