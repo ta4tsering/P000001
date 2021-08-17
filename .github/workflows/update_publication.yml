@@ -55,9 +55,8 @@ jobs:
                   if has_changed is False:
                       has_changed = True
               if repo.is_dirty() is True:
+                  repo.git.add(".")
                   for fn in repo.git.diff(None, name_only=True).split("\n"):
-                      if fn:
-                          repo.git.add(fn)
                       if has_changed is False:
                           has_changed = True
                   if has_changed is True:
